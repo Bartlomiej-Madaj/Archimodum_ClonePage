@@ -1,0 +1,28 @@
+.projectList {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* justify-content: center; */
+    margin: 0 auto;
+    transition: all 600ms ease-in;
+}
+
+.projectList h1 {
+    margin: 2rem 5%;
+    margin-top: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    align-self:  end;
+    color:rgb(0, 0, 0);
+
+    text-shadow: 1px 1px #969696 ;
+    cursor: pointer;
+}
+
+@media(max-width: 450px) {
+    .projectListMarginTop{
+        margin-top: 11rem;
+        transition: all 600ms ease-in;
+    }
+}
+

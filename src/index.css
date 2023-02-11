@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0, 0.87);
+
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button:focus-visible {
+  outline: 2px solid rgb(23, 23, 23);
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid rgb(23, 23, 23);
+  border-radius: 0.5rem;
+}
+
