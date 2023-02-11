@@ -9,7 +9,6 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
   const activeCxt = useContext(HeaderContext);
 
   return (
-    
     <Link to={project.path} className={styled.project} onClick={() => {navigate(project.path); activeCxt.changeActiveMenu(false); }}>
       <section className={styled.project__box}>
         <img src={project.image} alt={styled.project__content__description} />

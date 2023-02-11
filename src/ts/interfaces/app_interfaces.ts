@@ -1,5 +1,5 @@
 
-export interface ProjectArrayInterface {
+export interface ProjectInterface {
     rootPath: string;
     title: string;
     image: string;
@@ -14,7 +14,7 @@ export interface ProjectProps {
   }
   }
 
-  export interface CurrentProjectArrayInterface {
+  export interface CurrentProjectInterface {
     country: string;
     title: string;
     year: string;

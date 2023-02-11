@@ -2,7 +2,6 @@
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr;
-    /* justify-content: center; */
     margin: 0 auto;
     transition: all 600ms ease-in;
 }

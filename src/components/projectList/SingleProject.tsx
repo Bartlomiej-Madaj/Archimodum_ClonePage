@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "./SingleProject.module.css";
 import { SingleProjectProps } from '../../ts/interfaces/app_interfaces';
@@ -7,7 +7,6 @@ import HeaderContext from "../../store/header-context";
 const SingleProject: React.FC<SingleProjectProps> = ({ project }) => {
   const navigate = useNavigate();
   const activeCxt = useContext(HeaderContext);
-
 
   return (
     <Link to={`/${project.rootPath}/${project.title}`} className={styled.singleProject}>

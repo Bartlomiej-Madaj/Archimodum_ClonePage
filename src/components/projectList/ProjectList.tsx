@@ -2,11 +2,11 @@ import React, { useContext, useEffect } from "react";
 import styled from "./ProjectList.module.css";
 import SingleProject from "./SingleProject";
 import {
-  architectureProjectArray,
-  interiorProjectArray,
-  designProjectArray,
+  architectureProjects,
+  interiorProjects,
+  designProjects,
 } from "../../data/data";
-import { ProjectArrayInterface } from "../../ts/interfaces/app_interfaces";
+import { ProjectInterface } from "../../ts/interfaces/app_interfaces";
 import HeaderContext from "../../store/header-context";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -15,25 +15,28 @@ const ProjectList: React.FC<{ name: string }> = ({ name }) => {
 
   const activeMenu = activeCxt.menuActive;
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
+
 
    useEffect(() => {
-
     activeCxt.changeActive(true);
   }, [])
 
-  let projectArray: ProjectArrayInterface[] = [];
+  let projectArray: ProjectInterface[] = [];
 
   switch (name) {
     case "Architektura": {
-      projectArray = architectureProjectArray;
+      projectArray = architectureProjects;
       break;
     }
     case "Wnętrza": {
-      projectArray = interiorProjectArray;
+      projectArray = interiorProjects;
       break;
     }
     case "Design": {
-      projectArray = designProjectArray;
+      projectArray = designProjects;
       break;
     }
   }

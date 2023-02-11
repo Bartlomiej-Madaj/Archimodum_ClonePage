@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "./CurrentProject.module.css";
 import { useParams } from "react-router-dom";
-import { ProjectArray } from "../../data/data";
+import { Projects } from "../../data/data";
 import HeaderContext from "../../store/header-context";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -16,11 +16,14 @@ const CurrentProject: React.FC = () => {
   let { projectName } = useParams<ProjectNameParams>();
 
   useEffect(() => {
-
     activeCxt.changeActive(true);
   }, [])
 
-  const currentProject = ProjectArray.find(
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
+
+  const currentProject = Projects.find(
     (project) => project.title.toUpperCase() === projectName!.toUpperCase()
   );
 
@@ -108,7 +111,6 @@ const CurrentProject: React.FC = () => {
       </div>
       <article className={styled.currentProject__wrap}>
         <div className={styled.currentProject__name}>
-          {/* <span>{currentProject?.country}</span> */}
           <h2>{currentProject?.title.toUpperCase()}</h2>
           <span>
             <i>

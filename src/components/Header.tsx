@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import styled from "./Header.module.css";
 import { useNavigate } from "react-router-dom";
 import HeaderContext from "../store/header-context";
@@ -10,14 +10,6 @@ function Header() {
   const active = activeCxt.headerActive;
   const activeMenu = activeCxt.menuActive;
 
-  // const [screenWidth, setScreenWidth] = useState<number>()
-
-  // useEffect(()=> {
-    
-  //   setScreenWidth(window.innerWidth)
-  // }, [screenWidth])
-
-  // console.log(screenWidth)
   const navMenu = (
     <>
       <button

@@ -1,6 +1,6 @@
-import { ProjectArrayInterface, CurrentProjectArrayInterface } from '../ts/interfaces/app_interfaces';
+import { ProjectInterface, CurrentProjectInterface } from '../ts/interfaces/app_interfaces';
 
-  export const architectureProjectArray: ProjectArrayInterface[] = [
+  export const architectureProjects: ProjectInterface[] = [
       {
         rootPath: 'pl-architecture',
         title: 'Koncepcja stacji metra Orizont',
@@ -23,7 +23,7 @@ import { ProjectArrayInterface, CurrentProjectArrayInterface } from '../ts/inter
       },
     ]
   
-    export const interiorProjectArray: ProjectArrayInterface[] = [
+    export const interiorProjects: ProjectInterface[] = [
       {
         rootPath: 'pl-interiors',
         title: 'BUDYNEK BIUROWY ITALROM',
@@ -41,7 +41,7 @@ import { ProjectArrayInterface, CurrentProjectArrayInterface } from '../ts/inter
       },
     ]
   
-    export const designProjectArray: ProjectArrayInterface[] = [
+    export const designProjects: ProjectInterface[] = [
       {
         rootPath: 'pl-design',
         title: 'ARCHITEKTURA PRZESTRZENI PUBLICZNYCH',
@@ -59,7 +59,7 @@ import { ProjectArrayInterface, CurrentProjectArrayInterface } from '../ts/inter
       },
     ];
 
-    export const projectListArray = [
+    export const projectsList = [
         {name: 'ARCHITEKTURA',
          description: '\"Architektura jest mądrą, skoordynowaną grą brył w świetle.\" ',
          author: 'Le Corbusier',
@@ -78,7 +78,7 @@ import { ProjectArrayInterface, CurrentProjectArrayInterface } from '../ts/inter
         },
       ];
 
-    export const ProjectArray: CurrentProjectArrayInterface[] = [
+    export const Projects: CurrentProjectInterface[] = [
         {
           country: "Bukareszt",
           title: "Koncepcja stacji metra orizont",
